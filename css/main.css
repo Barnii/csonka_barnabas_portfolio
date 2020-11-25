@@ -1,0 +1,350 @@
+/*ELEJE*/
+@font-face {
+    font-family: cambria;
+    src: url("fonts/Cambria.ttf") format("opentype");
+}
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html{
+	background-image: url("backgrounds/3.jpg");
+	background-repeat: no-repeat;
+	background-position: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body {
+	overflow: overlay;
+}
+td {
+	padding-right: 20px;
+}
+
+
+/*FEJLEC*/
+.fejlec {
+	grid-area: fejlec;
+	width: auto;
+	text-align: center;
+}
+.fejlec h1 {
+	font-family: cambria;
+	color: #fdb900;
+	font-size: 40px;
+	margin-left:40px;
+	margin-right:40px;
+	width:auto;
+}
+
+
+/*NAVIGACIO*/
+.navigacio ul{
+	font-size:30px;
+	font-family: cambria;
+	color:#fdb900;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: bold;
+	list-style-type: none;
+	text-decoration: none;
+	margin-top:30px;
+	margin-bottom:30px;
+	background-color: rgba(0,0,0, 0.5);
+	border-radius: 8px;
+	width: 300px;
+	vertical-align: top;
+	margin-top: 0px !important;
+}
+.navigacio li{
+	padding-top:20px; 
+	padding-bottom:20px;
+}
+.navigacio{
+	grid-area: navigacio;
+	float:right;
+	width: auto;
+	border-radius: 6px;
+	display:inline-block;
+	margin-right:auto; 
+	margin-left:auto;
+}
+.fonavigacio {
+	grid-area: fonavigacio; 
+}
+.oldal {
+	font-family: cambria;
+	text-decoration: none;
+	border-top:3.5px solid black;
+	border-bottom:3.5px solid black;
+	background-color: #000000;
+	border-radius: 4px;
+	color:#fdb900;
+	padding-top:6px;
+	padding-bottom:6px;
+	padding-left:10px; 
+	padding-right:10px;
+	display:block;
+	text-align: center;
+}
+.oldal:hover{
+	cursor:pointer;
+	border: 3.5px solid #fdb900;
+	border-radius: 4px;
+	transition: 0.5s; 
+}
+.doku {
+	font-family: cambria;
+	text-decoration: none;
+	color:#fdb900;
+	font-size:15px;
+	display:block;
+	text-align: center;
+}
+
+
+/*BURKOLO*/
+.doboz {
+	grid-area: doboz;
+	display:inline-block;
+	background-color: rgba(0,0,0, 0.5);
+	border-radius: 8px;
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+	 
+}
+.bemutatkozas{
+	display: inline-block;
+	grid-area: bemutatkozas;
+	text-align: center;
+	border: none;
+	border-radius: 4px;
+	color:#fdb900;
+	max-width: 1000px;
+	width:300px;
+	float:right;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(0,0,0, 0.5);
+}
+.bemutatkozas img {
+	border-bottom: 3.5px solid black;
+	max-width: 16.5rem;
+	margin-right:0px;
+	height: auto;
+	float: center;
+	display: inline-block;
+	width:100%;
+}	
+.szoveg {
+	display: inline-block;
+	grid-area: szoveg;
+	margin: 1rem;
+	padding: 20px;
+	border:none;
+	border-radius: 8px;
+	font-family:cambria;
+	text-align: left;
+	font-size:20px;
+	color: #fbd900;
+	width: auto;
+	background-color: rgba(0,0,0, 0.5);
+}
+.szoveg pre {
+	font-family: cambria;
+	font-size:20px;
+	color: #fbd900;
+}
+.pakli {
+	grid-area:pakli;
+	text-align:center;
+}
+.koszones{
+	font-family: cambria;
+	color: #fdb900;
+	font-size: 100px;
+	text-align: center;
+}
+.bemszoveg {
+	font-family: cambria;
+	color: #fdb900;
+	text-align:center; 
+	font-size:30px;
+}
+.morze {
+	width:85%;
+	text-align: center;
+	border:3px solid #fdb900;
+	border-radius: 2px;
+}
+.burkolo{
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-bottom: 2.5rem;
+	grid-template-areas: 
+	"fonavigacio"
+	"bemutatkozas"
+	"doboz";
+}
+.burkolo2 {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-bottom: 2.5rem;
+	grid-template-areas: 
+	"navigacio"
+	"fejlec"
+	"szoveg";
+}
+.burkolo3 {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-bottom: 2.5rem;
+	grid-template-areas: 
+	"navigacio"
+	"fejlec"
+	"pakli";
+}
+
+
+/*KARTYA*/
+.projekt {
+	display: inline-block;
+	margin: 1rem;
+	padding: 20px;
+	border:none;
+	border-radius: 8px;
+	font-family:cambria;
+	text-align: left;
+	font-size:20px;
+	color: #fbd900;
+	max-width: 100%;
+	background-color: rgba(0,0,0, 0.5);
+}
+.kartya{
+		display: inline-block;
+		background-color: black;
+		border: 2px solid #fdb900;
+		border-radius: 10px;
+		padding: .4rem;
+		margin: 8px;
+		text-align: center;
+		max-width: 15rem;
+		min-height: 350px;
+		max-height:350px;
+		vertical-align: top;
+		overflow:auto;
+}
+.kartya img{
+		max-height: 10rem;
+		max-width:85%;
+		display: block;
+		border: 3px solid #fdb900;
+		border-radius: 2px; 
+		margin-left:auto; 
+		margin-right:auto;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+}
+.kartya:hover img{
+		cursor: pointer;
+}
+.kartya span{
+		font-weight: bolder;
+		color: #fdb900;
+}
+
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+	background-color: black;
+}
+::-webkit-scrollbar-thumb {
+ 	background: black;
+ 	border: 3px solid #fdb900;
+ 	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+ 	background: #555;
+} 
+
+/*SZOTORDELO*/
+.tordelo {
+	word-break: break-all;
+}
+/*MEDIAQUERY*/
+@media only screen and (min-width: 760px){
+	.navigacio ul{
+		margin-top: 16px !important;
+	}
+	.fonavigacio ul{
+		margin-top: 117px !important;
+	}
+	.pakli {
+		text-align: left;
+	}
+	.fejlec {
+		text-align:left;
+	}
+	.burkolo{
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-bottom: 2.5rem;
+	margin-right: 20px;
+	grid-template-areas: 
+	"bemutatkozas doboz fonavigacio"
+	}
+	.burkolo2 {
+	display: grid;
+	grid-template-columns: 1fr minmax(min-content, 300px);
+	padding-bottom: 2.5rem;
+	margin-right: 20px;
+	grid-template-areas:
+	"fejlec fejlec" 
+	"szoveg navigacio";
+	}
+	.burkolo3 {
+	display: grid;
+	grid-template-columns: 1fr minmax(min-content, 300px);
+	padding-bottom: 2.5rem;
+	margin-right: 20px;
+	grid-template-areas:
+	"fejlec fejlec"
+	"pakli navigacio";
+	}
+	.bemutatkozas{
+	display: inline-block;
+	text-align: center;
+	padding:20px;
+	margin-left: 150px;
+	margin-right: 1rem;
+	margin-top:117px;
+	border: none;
+	border-radius: 8px;
+	color:#fdb900;
+	max-width: 1200px;
+	width:auto;
+	float:right;
+	}
+	.bemutatkozas img {
+	border-bottom: 3.5px solid black;
+	max-width: 16.5rem; 
+	height: auto;
+	margin-right:10px;
+	float: left;
+	display: inline-block;
+	width: 100%;
+	}
+	.koszones{
+		margin-top: 10px;
+		margin-right:auto; 
+		margin-left:auto;
+	}
+	.bemszoveg {
+		margin-right:auto; 
+		margin-left:auto;
+	}
+}
+

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: paraaminobenzoic;
+    src: url("paraaminobenzoic.ttf") format("opentype");
+}
+
+body{
+	background-image: url('bg.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    background-position: cover;
+}
+
+h1{
+	text-align: center;
+	font-size:110px;
+	color: pink;
+	padding-bottom: 60px;
+	margin-top:66px;
+	font-family: paraaminobenzoic;
+	text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, 0px 29px 20px #A237CE;
+	
+}
+
+.myButton {
+	background-color:transparent;
+	display:inline-block;
+	cursor:pointer;
+	color: pink;
+	font-family:paraaminobenzoic;
+	font-size:80px;
+	text-decoration:none;
+	text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, 0px 29px 20px #A237CE;
+}
+
+.myButton:hover {
+	background-color:transparent;
+	color: #ffd84a;
+	text-shadow: yellow 0px 0px 4px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px, 0px 29px 20px #a41d5b;
+}
+
+.myButton:active {
+	position:relative;
+	top:10px;
+}
